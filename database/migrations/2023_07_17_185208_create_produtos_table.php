@@ -11,24 +11,14 @@ class CreateProdutosTable extends Migration
      *
      * @return void
      */
-    public function up(): void
-
-    {
-
+    public function up(): void    {
         Schema::create('produtos', function (Blueprint $table) {
-
             $table->id();
-
             $table->string('descricao');
-
             $table->integer('qtd');
-
             $table->float('precoUnitario');
-
             $table->float('precoVenda');
-
-	    $table->timestamps();
-
+	        $table->timestamps();
         });
 
     }
